@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Todo/Task Management App
 
-## Getting Started
+Welcome to the Todo/Task Management App! This project is built using Next.js, Clerk for authentication, MongoDB as the database, and Prisma as the ORM. It allows users to manage their tasks efficiently with full CRUD operations and categorization features.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔐 **Authentication**: Secure user authentication using Clerk.
+- ✍️ **CRUD Operations**: Create, Read, Update, and Delete tasks seamlessly.
+- 📂 **Categories**: Organize tasks into categories for better management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js
+- **Authentication**: Clerk
+- **Database**: MongoDB
+- **ORM**: Prisma
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📦 Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   git clone https://github.com/maahin2005/Task_Manager.git
+   cd todo-task-management
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```sh
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add your environment variables. Refer to the `.env.example` file for the required variables.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```sh
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🗂️ Project Structure
+
+## 🔄 CRUD Operations
+
+- **Create**: Add a new task with title, description, and category.
+- **Read**: View all tasks in a list, filtered by categories.
+- **Update**: Edit existing tasks.
+- **Delete**: Remove tasks from the list.
+
+## 🎨 Styling
+
+The app uses Tailwind CSS for styling, ensuring a responsive and modern design.
+
+## ⚙️ Prisma Setup
+
+To set up Prisma, run the following commands:
+
+1. Generate Prisma client:
+
+   ```sh
+   npx prisma generate
+   ```
+
+2. Apply database migrations:
+   ```sh
+   npx prisma migrate dev
+   ```
+
+## 👥 Contributors
+
+- **Mahin Malek** - [GitHub](https://github.com/maahin2005)
+
+Feel free to open issues or submit pull requests to help improve the project! 🌟
