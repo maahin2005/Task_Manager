@@ -103,7 +103,7 @@ function CreateContent() {
         />
       </div>
       <div className="input-control toggler">
-        <label htmlFor="completed">Toggle Completed</label>
+        <label htmlFor="completed">Status</label>
         <input
           value={completed.toString()}
           onChange={handleChange("completed")}
@@ -113,7 +113,7 @@ function CreateContent() {
         />
       </div>
       <div className="input-control toggler">
-        <label htmlFor="important">Toggle Important</label>
+        <label htmlFor="important">Mark as Important</label>
         <input
           value={important.toString()}
           onChange={handleChange("important")}
