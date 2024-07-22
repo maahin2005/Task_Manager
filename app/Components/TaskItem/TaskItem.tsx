@@ -50,7 +50,7 @@ function TaskItem({ title, description, date, isCompleted, id }: Props) {
             Incomplete
           </button>
         )}
-        <button className="edit">{edit}</button>
+        {/* <button className="edit">{edit}</button> */}
         <button
           className="delete"
           onClick={() => {
